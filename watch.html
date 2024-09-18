@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iWatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="watch.css">
+</head>
+<body>
+    <header>
+        <div>
+        <i class="fa fa-apple" style="font-size:18px;color:black"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Store</a></li>
+                <li><a href="mac.html">Mac</a></li>
+                <li><a href="ipad.html">iPad</a></li>
+                <li><a href="iphone.html">iPhone</a></li>
+                <li><a href="watch.html">Watch</a></li>
+                <li><a href="airpods.html">Airpods</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="d-md-none">
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand fw-bold" href="#"><i class="fa fa-apple" style="font-size:18px;color:black"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel"><i class="fa fa-apple" style="font-size:18px;color:black"></i></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="mac.html">Mac</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ipad.html">iPad</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="iphone.html">iPhone</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="watch.html">Watch</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="airpods.html">Airpods</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="support.html">Support</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </section>
+    <h1 class="text-center">Compare Apple Watch Models</h1>
+    <button style="position: fixed;border-radius: 50%;padding: .5rem;z-index: 9999;" onclick="show()"><i class="fa fa-shopping-cart" style="font-size:28px"></i></button>
+    <div style="width: 300px;height:100vh ;position: fixed;top:98px;display: none;background-color:rgba(0, 0, 0, 0.61);color: white;border-radius: 2rem;" id="div">
+        <h4 class="d-flex justify-content-end" style="position: fixed;top:240px">Items:<span id="output"></span></h4>
+    <h4 class="d-flex justify-content-end" style="position: fixed;top:280px">Total:<span id="output1"></span></h4>
+    <h6 class="d-flex justify-content-end" style="position: fixed;top:310px;max-width: 250px;">Products:<span id="product"></span></h6>
+    
+    </div>
+    <section class="sec1">
+        <div></div>
+        <div class="p1 text-center d-flex flex-column justify-content-center align-items-center">
+            <h6 class="my-4">Series 9</h6>
+            <img src="watch2.jpg" alt="">
+            <div class="d-flex my-4 price">
+               <p>Powerful sensors,Advanced health features</p>
+               <p>From ₹41900.00*</p>
+            </div>
+            <button onclick="select1()" class="btn btn-primary mt-3" style="border-radius:3rem;">Select</button>
+            <h5 class="my-4 sum">Quick Look</h5>
+            <p class="scr">45 mm or 41 mm aluminium or
+                stainless steel case size</p>
+            <div class="pp">
+            <p>Carbon-neutral
+                combinations available1</p>
+            <p>Always-On Retina display
+                Up to 2,000 nits</p>
+            <p>Up to 18 hours16</p>
+            <p>Up to 36 hours in
+                Low Power Mode16</p>
+            <p>Fast charging18</p>
+        </div>
+            <h5 class="my-4 sum">Diplay</h5>
+            <div class="pp">
+            <p>Always-On Retina display</p>
+            <p>Always-On technology keeps the display on so you can see information at a glance. And with a maximum brightness of 2,000 nits, twice that of Series 8 and SE, it’s easier to read in bright sunlight. Detailed watch faces look stunning, even when your wrist is down. The edge-to-edge design accommodates your favourite complications and makes tapping, typing and swiping easy.</p>
+        </div>
+            <h5 class="my-4 sum">Materials and Finishes</h5>
+            <div class="pp">
+            <p>Aluminium Stainless steel</p>
+            <p>100% recycled aluminium or stainless steel case. Features a thick front crystal with a flat base and robust geometry for durability and crack resistance. Ion-X front glass on aluminium models. Sapphire front crystal on stainless steel models.</p>
+        </div>
+        </div>
+        <div class="p1 text-center d-flex flex-column justify-content-center align-items-center">
+            <h6 class="my-4">SE</h6>
+            <img src="watch1.jpg" alt="">
+            <div class="d-flex my-4 price">
+                <p>All the essentials.Light on price.</p>
+                <p>From ₹29900.00*</p>
+            </div>
+            <button onclick="select2()" class="btn btn-primary mt-3" style="border-radius:3rem;">Select</button>
+            <h5 class="my-4 sum">Quick Look</h5>
+            <p class="scr">44 mm or 40 mm
+                aluminium case size</p>
+            <div class="pp">
+            <p>Carbon-neutral
+                combinations available1</p>
+            <p>Retina display
+                Up to 1,000 nits</p>
+            <p>S8 SiP</p>
+            <p>Available cellular connectivity13</p>
+            <p>Up to 18 hours15</p>
+            <p>Low Power Mode</p>
+        </div>
+            <h5 class="my-4 sum">Display</h5>
+            <div class="pp">
+            <p>Retina display</p>
+            <p>Raise your wrist and the display instantly comes to life. Great screen area to feature a variety of watch faces with multiple complications.</p>
+        </div>
+            <h5 class="my-4 sum">Aluminium</h5>
+            <div class="pp">
+            <p>100% recycled aluminium case. Colour-matched back case in a nylon composite material. Ion-X front glass.</p>
+        </div>
+        </div>
+        <div class="p1 text-center d-flex flex-column justify-content-center align-items-center">
+            <h6 class="my-4">Ultra 2</h6>
+            <img src="watch3.jpg" alt="">
+            <div class="d-flex my-4 price">
+                <p>The most rugged
+                    and capable.</p>
+                <p>From ₹89900.00*</p>
+            </div>
+            <button onclick="select3()" class="btn btn-primary mt-3" style="border-radius:3rem;">Select</button>
+            <h5 class="my-4 sum">Quick Look</h5>
+            <p class="scr">49 mm titanium
+                case size</p>
+            <div class="pp">
+            <p>Carbon-neutral
+                combinations available1</p>
+            <p>Always-On Retina display
+                Up to 3,000 nits</p>
+            <p>S9 SiP</p>
+            <p>Double tap gesture</p>
+            <p>Faster on-device Siri</p>
+            <p>Precision Finding
+                for iPhone2</p>
+        </div>
+            <h5 class="my-4 sum">Display</h5>
+            <div class="pp">
+            <p>Always-On Retina display</p>
+            <p>The largest display, with up to 3,000 nits of brightness — the brightest display Apple has ever designed. Large enough to see up to six lines of workout metrics at a glance. Readable even in direct sunlight. Always-On technology keeps the display on so you can see key information at a glance. The new exclusive Modular Ultra watch face is easily customisable and shows real-time altitude, depth or second on the outermost edges, and Night Mode can activate automatically in the dark.
+            </p>
+        </div>
+            <h5 class="my-4 sum">Titanium</h5>
+            <div class="pp">
+                <p>Made with 95% recycled aerospace-grade titanium for the perfect balance between weight, ruggedness and corrosion resistance.20 Case designed with raised edges to protect the flat sapphire front crystal from edge impacts. Super rugged to withstand the elements.</p>
+        </div>
+        </div>
+        <div></div>
+    </section>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+    <div class="pt-4">
+        <p>‡Instant cashback is available with the purchase of an eligible product with qualifying American Express, Axis Bank and ICICI Bank cards only. Minimum transaction value of ₹10001.00 applies. Click here to see instant cashback amounts and eligible devices. Instant cashback is available for up to two orders per rolling 90-day period with an eligible card. Card eligibility is subject to terms and conditions between you and your card issuer. Total transaction value is calculated after any trade-in credit or eligible discount is applied. Any subsequent order adjustment(s) or cancellation(s) may result in instant cashback being recalculated, and any refund may be adjusted to account for instant cashback clawback; this may result in no refund being made to you. Offer may be revised or withdrawn at any time without any prior notice. Additional terms apply. Offer cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Multiple separate orders cannot be combined for instant cashback. To receive this offer, purchase must be charged to a single eligible card.</p>
+        <p>*Qualified purchasers can receive promotion savings when they purchase an eligible product with promotion product at a qualifying location. Only one promotion product per eligible product per qualified purchaser. Offer is subject to availability. Subject to terms and conditions </p>
+        <p>1. Apple Intelligence will be available in beta on iPhone 15 Pro, iPhone 15 Pro Max, and iPad and Mac with M1 and later, with Siri and device language set to US English, as part of iOS 18, iPadOS 18 and macOS Sequoia later this year.</p>
+        <p>Some features, additional languages and platforms will be coming over the course of the next year.</p>
+        <p>A subscription is required for Apple TV+.</p>
+    </div>
+    <hr>
+    <section class="footsec">
+        <div>
+            <ul><h6>Shop and Learn</h6>
+                <li><a href="index.html">Store</a></li>
+                <li><a href="mac.html">Mac</a></li>
+                <li><a href="ipad.html">iPad</a></li>
+                <li><a href="iphone.html">iPhone</a></li>
+                <li><a href="watch.html">Watch</a></li>
+                <li><a href="airpods.html">Airpods</a></li>
+                <li><a href="support.html">TV & Home</a></li>
+                <li><a href="support.html">AirTag</a></li>
+                <li><a href="support.html">Accessories</a></li>
+                <li><a href="support.html">Gift Cards</a></li>
+            </ul>
+            <ul><h6>Apple Wallet</h6>
+                <li><a href="support.html">Wallet</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul><h6>Account</h6>
+            <li><a href="support.html">Manage Your Apple ID</a></li>
+            <li><a href="support.html">Apple Store Account</a></li>
+            <li><a href="support.html">iCloud.com</a></li>
+        </ul>
+        <ul><h6>Entertainment</h6>
+            <li><a href="support.html">Apple One</a></li>
+            <li><a href="support.html">Apple TV+</a></li>
+            <li><a href="support.html">Apple Music</a></li>
+            <li><a href="support.html">Apple Arcade</a></li>
+            <li><a href="support.html">Apple Podcasts</a></li>
+            <li><a href="support.html">Apple Books</a></li>
+            <li><a href="support.html">App Store</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul><h6>Apple Store</h6>
+            <li><a href="support.html">Find a Store</a></li>
+            <li><a href="support.html">Genius Bar</a></li>
+            <li><a href="support.html">Today at Apple</a></li>
+            <li><a href="support.html">Group Reservation</a></li>
+            <li><a href="support.html">Apple Camp</a></li>
+            <li><a href="support.html">Apple Trade In</a></li>
+            <li><a href="support.html">Ways TO Buy</a></li>
+            <li><a href="support.html">Recycling Programme</a></li>
+            <li><a href="support.html">Order Status</a></li>
+            <li><a href="support.html">Shopping Help</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul><h6>For Business</h6>
+            <li><a href="support.html">Apple and Business</a></li>
+            <li><a href="support.html">Shop for Business</a></li>
+        </ul>
+        <ul><h6>For Education</h6>
+            <li><a href="support.html">Apple and Eduction</a></li>
+            <li><a href="support.html">Shop for Eduction</a></li>
+            <li><a href="support.html">Shop for University</a></li>
+        </ul>
+        <ul><h6>For Healthcare</h6>
+            <li><a href="support.html">Apple in Healthcare</a></li>
+            <li><a href="mac.html">Mac in Healthcare</a></li>
+            <li><a href="support.html">Health on Apple Watch</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul><h6>Apple Values</h6>
+            <li><a href="support.html">Accessibility</a></li>
+            <li><a href="support.html">Eduction</a></li>
+            <li><a href="support.html">Environmental</a></li>
+            <li><a href="support.html">Privacy</a></li>
+            <li><a href="support.html">Supply Chain</a></li>
+        </ul>
+        <ul>
+            <h6>About Apple</h6>
+            <li><a href="support.html">Newsroom</a></li>
+            <li><a href="support.html">Apple Leadership</a></li>
+            <li><a href="support.html">Career Opportunites</a></li>
+            <li><a href="support.html">Investors</a></li>
+            <li><a href="support.html">Enthics & Compliance</a></li>
+            <li><a href="support.html">Events</a></li>
+            <li><a href="support.html">Contact Apple</a></li>
+        </ul>
+    </div>
+    </section>
+</div>
+    <div class="col-2"></div>
+</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <script src="watch.js"></script>
+</body>
+</html>
